@@ -9,7 +9,7 @@ module ShopifyKit
       key = options[:key]
       password = options[:password]
       shop = options[:shop]
-      @url = "https://#{key}:#{password}@#{shop}.myshopify.com/admin"
+      @url = "https://#{key}:#{password}@#{shop}.myshopify.com"
     end
 
     def connection
