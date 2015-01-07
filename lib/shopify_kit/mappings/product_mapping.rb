@@ -4,7 +4,7 @@ module ShopifyKit
 
     kartograph do
       mapping Product
-      root_key plural: 'products', singular: 'product', scopes: [:read]
+      root_key plural: 'products', singular: 'product', scopes: [:read, :create, :update]
 
       property :body_html, scopes: [:read, :create, :update]
       property :created_at, scopes: [:read]
